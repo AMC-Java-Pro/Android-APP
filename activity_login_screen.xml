@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login_screen"
+    android:background="@color/main_logo">
+
+    <FrameLayout
+
+        android:layout_width="354dp"
+        android:layout_height="571dp"
+        android:background="@drawable/search_box"
+        android:elevation="11dp"
+        android:outlineSpotShadowColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.453">
+
+        <ImageView
+            android:layout_width="132dp"
+            android:layout_height="128dp"
+            android:layout_marginLeft="119dp"
+            android:layout_marginTop="3dp"
+            app:srcCompat="@drawable/logo" />
+
+        <FrameLayout
+            android:layout_width="320dp"
+            android:layout_height="400dp"
+            android:layout_marginLeft="16.5dp"
+            android:layout_marginTop="140dp"
+            android:background="@drawable/login"
+            android:elevation="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="108dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/pbold"
+                android:text="LOGIN"
+                android:textColor="@color/white"
+                android:textSize="35dp" />
+
+            <FrameLayout
+                android:layout_width="281dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="110dp"
+                android:background="@drawable/login_sub"
+                android:elevation="5dp">
+
+                <EditText
+                    android:id="@+id/editTextLogEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:hint="email"
+                    android:paddingLeft="25dp"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/pbold"
+                    tools:ignore="SpeakableTextPresentCheck,TextFields" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="180dp"
+                android:background="@drawable/login_sub"
+                android:elevation="5dp">
+
+                <EditText
+                    android:id="@+id/editTextLogPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:paddingLeft="25dp"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/pbold"
+                    android:inputType="textPassword"
+                    tools:ignore="SpeakableTextPresentCheck,TextFields" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="279dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="280dp"
+                android:background="@drawable/login_but"
+                android:elevation="5dp">
+
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/logbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:text="Login"
+                    android:fontFamily="@font/pbold"
+                    android:textSize="22dp"
+                    android:textColor="@color/white"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/resignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="350dp"
+                android:fontFamily="@font/pmedium"
+                android:text="Don't have account?  Signup"
+                android:textSize="12dp"
+                tools:ignore="InOrMmUsage,VisualLintBounds,TextSizeCheck" />
+
+
+        </FrameLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
